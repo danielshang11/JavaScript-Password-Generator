@@ -33,10 +33,7 @@ function pwCriteria(){
   var upperCases = confirm("What about upper-case?");
   var specialChars = confirm("Do you want your password including special characters?");
   
-  // WHEN asked for character types to include in the password
-  // THEN I confirm whether or not to include lowercase, uppercase, numeric, and/or special characters
-  // WHEN I answer each prompt
-  // THEN my input should be validated and at least one character type should be selected
+
   if (numericNums === false && lowerCases === false && upperCases === false && specialChars === false){
     alert("Please at least choose one character type to proceed.");
     return pwCriteria();
@@ -50,7 +47,6 @@ function pwCriteria(){
     if (upperCases){arr1 = arr1.concat(upperCase);}
     if (specialChars){arr1 = arr1.concat(specialChar);}
 
-    // const arr1 = array[Math.floor(Math.random() * array.length)];
     for (let i = 0; i < charLength; i++) {
       num = arr1[Math.floor(Math.random() * arr1.length)];
       answer.push(num);
