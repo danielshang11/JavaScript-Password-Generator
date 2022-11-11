@@ -17,7 +17,7 @@ function passwordChar(){
   } else if (charLength > 128){
     alert("The length you enter is too long! Please enter the length between 8 - 128");
     return passwordChar();
-  } else if (isNaN(length)){
+  } else if (Number.isNaN(NaN)){
     alert("Must to be numbers, please enter the valid number to proceed.");
     return passwordChar();
   } else pwCriteria();
@@ -38,17 +38,20 @@ function pwCriteria(){
     alert("Please at least choose one character type to proceed.");
     return pwCriteria();
     } else{
-      var arr1 = [];
-      var num = 'o';
+      var characterArr = [];
+      // this is an array
+      var num = 'o'; 
+      // what comes out is a number
       var answer = [];
+      // answer comes out which is the result
 
-    if (numericNums){arr1 = arr1.concat(numericNum);}
-    if (lowerCases){arr1 = arr1.concat(lowerCase);}
-    if (upperCases){arr1 = arr1.concat(upperCase);}
-    if (specialChars){arr1 = arr1.concat(specialChar);}
+    if (numericNums){characterArr = characterArr.concat(numericNum);}
+    if (lowerCases){characterArr = characterArr.concat(lowerCase);}
+    if (upperCases){characterArr = characterArr.concat(upperCase);}
+    if (specialChars){characterArr = characterArr.concat(specialChar);}
 
     for (let i = 0; i < charLength; i++) {
-      num = arr1[Math.floor(Math.random() * arr1.length)];
+      num = characterArr[Math.floor(Math.random() * characterArr.length)];
       answer.push(num);
     };
     console.log(answer);
