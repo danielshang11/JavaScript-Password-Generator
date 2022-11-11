@@ -1,26 +1,12 @@
 // Assignment code here
 
-// get the user's requirement choices for the element of the password
-// GIVEN I need a new, secure password
-// WHEN I click the button to generate a password
-// THEN I am presented with a series of prompts for password criteria
 
-
-//varible the caracters of number, lowercase, uppercase, and specialcase for array
 var numericNum = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 var lowerCase = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 var upperCase = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 var specialChar = ['~', '!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '_', '+', '=', '-', '[', ']', '\\', '{', '}', '|', ';', '\'', ':', '"', '<', '>', '?'];
 var charLength = 0;
 var password = "";
-
-// WHEN all prompts are answered
-// THEN a password is generated that matches the selected criteria
-// WHEN the password is generated
-// THEN the password is either displayed in an alert or written to the page
-
-// THEN I choose a length of at least 8 characters and no more than 128 characters
-// WHEN asked for character types to include in the password
 
 
 function passwordChar(){
@@ -70,7 +56,7 @@ function pwCriteria(){
       answer.push(num);
     };
     console.log(answer);
-    
+
     password = answer.join('');
   }
     
