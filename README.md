@@ -23,6 +23,9 @@ N/A
 https://www.w3schools.com/
 Help me to understand more about the JS
 
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isNaN
+the info regarding how to put isNaN in the prompt for the length when the input is not a number.
+
 ## License
 
 Refer the License in Repo

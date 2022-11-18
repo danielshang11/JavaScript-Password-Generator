@@ -11,16 +11,17 @@ var password = "";
 
 function passwordChar(){
   charLength = window.prompt( "Please let me know how many caracters you'd like to have in password? please enter the number which is between 8 and 128.", "8"
-  ); if (charLength < 8){
+  ); 
+  if (charLength < 8){
     alert("The length you enter is too short! Please enter the length between 8 - 128");
     return passwordChar();
   } else if (charLength > 128){
     alert("The length you enter is too long! Please enter the length between 8 - 128");
     return passwordChar();
-  } else if (Number.isNaN(NaN)){
+  } else if (isNaN(charLength)){
     alert("Must to be numbers, please enter the valid number to proceed.");
     return passwordChar();
-  } else pwCriteria();
+  } else {pwCriteria()};
 }
 
 
