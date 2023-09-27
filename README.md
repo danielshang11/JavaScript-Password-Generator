@@ -1,5 +1,4 @@
 # JavaScript-Password-Generator
-# Daniel-Yang-Challenge1
 
 ## Description
 
