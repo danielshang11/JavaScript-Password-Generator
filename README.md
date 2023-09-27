@@ -15,7 +15,7 @@ N/A
 
 
 ![alt text](./Password%20Generator.gif)
-![alt text](./Password%20Generator.webm)
+
 ## Credits
 
 
